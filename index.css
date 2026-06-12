@@ -40,3 +40,21 @@ p { color: #636e72; font-size: 1.2rem; }
     transform: translateY(-5px); /* Lift effect */
     box-shadow: 0 8px 20px rgba(108, 92, 231, 0.5);
 }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Smaller font on mobile */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Adjust spacing between buttons */
+        width: 80%; /* Ensure buttons don't hit the edges */
+    }
+
+    .btn {
+        text-align: center;
+        padding: 12px 25px;
+    }
+}
