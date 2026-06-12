@@ -1,0 +1,105 @@
+/* --- Base Styles (Mobile Default: 1fr) --- */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #f4f4f4;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+}
+
+/* Requirement: Nav hover effect */
+nav a:hover {
+    background: #ddd;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* Mobile: Single column */
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Requirement: Rounded corners */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Requirement: Box-shadow */
+    margin-bottom: 20px;
+}
+
+.placeholder-img {
+    height: 150px;
+    background-color: #888; /* Requirement: Colored placeholder */
+    margin-bottom: 10px;
+}
+
+/* Sidebar Styling */
+aside {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #333; /* Requirement: Visually distinct */
+}
+
+.tag {
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* --- Tablet View (768px): 2-column grid for articles --- */
+@media (min-width: 768px) {
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* --- Desktop View (1024px): Sidebar on left, articles on right --- */
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: 260px 1fr; /* Requirement: 260px 1fr */
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    aside {
+        order: -1; /* Puts the sidebar on the left */
+    }
+}
