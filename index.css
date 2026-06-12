@@ -1,0 +1,42 @@
+/* index.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+h1 { 
+    color: #2d3436; 
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+p { color: #636e72; font-size: 1.2rem; }
+
+.button-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    background: #6c5ce7;
+    border-radius: 50px; /* Rounded pill shape */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.btn:hover {
+    background: #a29bfe;
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.5);
+}
