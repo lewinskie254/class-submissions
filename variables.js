@@ -18,14 +18,35 @@ const userName = "Student";
 // A boolean example
 let isFinished = false;
 
+//logs 
 console.log("Variables initialized.");
 console.log(templateLiteral)
 console.log(`isStudent: ${isStudent}`)
 
+//type of 
 console.log(`typeof(Name): ${typeof(Name)}`)
 console.log(`typeof(Age): ${typeof(Age)}`)
 console.log(`typeof(True): ${typeof(true)}`)
 console.log(`typeof(undefined): ${typeof(undefined)}`)
+
+//test comparisons 
+
+const first = 5 === 5; 
+const second = 5 === '5'; 
+const third = 5 == '5'; 
+
+console.log(`5 === 5: ${first}`)
+console.log(`5 === '5': ${second}`)
+console.log(`5 == '5': ${third}`)
+
+//seven 
+
+let x; 
+let y = null; 
+console.log(`x: ${x}`)
+console.log(`y: ${y}`)
+
+
 
 /* REFLECTION:
 When would you use 'const' vs 'let'?
