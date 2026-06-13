@@ -1,5 +1,3 @@
-// --- Part 3: Write Your First Functions ---
-
 // 1. Area calculation
 function calculateArea(width, height) {
     return width * height;
@@ -8,7 +6,7 @@ console.log("Area (5,10):", calculateArea(5, 10));
 console.log("Area (3,7):", calculateArea(3, 7));
 console.log("Area (100,0):", calculateArea(100, 0));
 
-// 2. isEven (Arrow Function)
+// 2. isEven 
 const isEven = (number) => number % 2 === 0;
 console.log("isEven(4):", isEven(4));
 console.log("isEven(7):", isEven(7));
@@ -49,7 +47,7 @@ console.log("2023 leap?", isLeapYear(2023));
 function reverseString(str) {
     return str.split("").reverse().join("");
 }
-console.log("Reverse 'YourName':", reverseString("YourName"));
+console.log(`Reverse ${Name}:`, reverseString(Name));
 
 // 7. Longest Word
 function longestWord(sentence) {
@@ -60,4 +58,4 @@ function longestWord(sentence) {
     }
     return longest;
 }
-console.log("Longest word:", longestWord("The quick brown fox"));
+console.log("Longest word:", longestWord(`My name is ${Name}. I am ${Age} years old and I live in ${City}`));

@@ -1,5 +1,8 @@
 // --- Part 2: Variables and Data Types ---
-
+const Name = 'Denzel Sibanda'
+const Age = '21'
+const City = 'New York'
+const isStudent = true; 
 // Using 'let' for values that might change
 let score = 0;
 score = 10; 
@@ -14,6 +17,8 @@ const userName = "Student";
 let isFinished = false;
 
 console.log("Variables initialized.");
+console.log(`My name is ${Name}. I am ${Age} years old and I live in ${City}`)
+console.log(`isStudent: ${isStudent}`)
 
 /* REFLECTION:
 When would you use 'const' vs 'let'?
