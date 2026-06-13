@@ -3,6 +3,8 @@ const Name = 'Denzel Sibanda'
 const Age = 21
 const City = 'New York'
 const isStudent = true; 
+
+const templateLiteral = `My name is ${Name}. I am ${Age} years old and I live in ${City}`; 
 // Using 'let' for values that might change
 let score = 0;
 score = 10; 
@@ -17,7 +19,7 @@ const userName = "Student";
 let isFinished = false;
 
 console.log("Variables initialized.");
-console.log(`My name is ${Name}. I am ${Age} years old and I live in ${City}`)
+console.log(templateLiteral)
 console.log(`isStudent: ${isStudent}`)
 
 console.log(`typeof(Name): ${typeof(Name)}`)

@@ -58,4 +58,4 @@ function longestWord(sentence) {
     }
     return longest;
 }
-console.log("Longest word:", longestWord(`My name is ${Name}. I am ${Age} years old and I live in ${City}`));
+console.log("Longest word:", longestWord(templateLiteral));
