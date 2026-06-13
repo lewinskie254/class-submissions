@@ -1,7 +1,7 @@
 // --- Part 2: Variables and Data Types ---
 const Name = 'Denzel Sibanda'
-const Age = 21
-const City = 'New York'
+const Age = 23
+const City = 'Warsaw'
 const isStudent = true; 
 
 const templateLiteral = `My name is ${Name}. I am ${Age} years old and I live in ${City}`; 
